@@ -249,18 +249,66 @@ View(band_members)
 # Essa funcao, View, nao faz parte do tidyverse, mas e' util para visualizar dados
 # como em uma planilha.
 
-# Ou melhor ainda, pra ser rapido e sintetico:
+
+# Ou, melhor ainda, pra ser rapido e sintetico:
 glimpse(band_members)
 
 
-# 
+# Se quisermos apenas saber o nome de todas as variaveis em um data.frame, podemos usar:
+names(band_members)
 
 
+# Para saber o numero de linhas e de colunas, respectivamente:
+nrow(band_members)
+ncol(band_members)
 
 
+# Para adiantar um pouco do que veremos, o tidyverse contém inúmeras funcoes que
+# servem para manipular objetos como esses, os data.frames. A estrutura de todas
+# elas e' bastante similar: funcao(data.frame, argumento).
 
 
+# Vamos comecar com algumas operacoes simples, apenas para voces terem o feeling
+# de como a coisa funciona. Suponhamos que, do data.frame 'band_members', eu
+# queira preservar apenas a variavel 'name'. Como fazemos isso? Usando o tidyverse:
+select(band_members, name)
 
 
+# Para selecionar a variavel 'band', do mesmo modo, usamos:
+select(band_members, band)
 
+
+# Se quisermos selecionar as duas (o que nao faz tanto sentido aqui, mas sera' 
+# no futuro):
+select(band_members, band, name)
+
+
+# Note que, com esse codigo, inclusive invertemos a ordem das variaveis. Caso
+# voce queira fazer em isso em qualquer base, esse e' uma das formas.
+
+
+# Antes de encerrar, vamos ver um tipo de select que funciona nas linhas, slice:
+slice(band_members, 1)
+
+
+# Viram? slice(data.frame, 1) pega a primeira linha de um deta.frame. Ela e'
+# parecida com select, mas funciona nas linhas, na horizontal. Como pegar
+# apenas a segunda linha de um banco? Facil:
+slice(band_members, 2)
+
+
+# E se eu quiser a primeira e a segunda? Existem algumas formas:
+slice(band_members, 1, 2)
+
+
+# Ou (note que estou usando vetores para fazer isso):
+slice(band_members, 1:2)
+
+
+# O que e' igual tambem a:
+slice(band_members, c(1, 2))
+
+
+# Com isso, encerramos essa parte do conteudo. Falta ainda vermos muitas coisas,
+# mas espero que isso ja' tenha dado uma ideia do que vem pela frente.
 
