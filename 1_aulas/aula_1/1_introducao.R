@@ -198,6 +198,6 @@ cafe_puro > cafe_doce
 # Com isso, terminamos a parte de familiarizacao com o console no R.
 
 
-# No arquivo exemplos_basicos.R, estao disponiveis alguns exemplos
-# de codigos comentados, que podem ser usados para praticar o que
+# No arquivo 1_exemplos_basicos.R, na pasta de scripts adicionais, estao disponiveis 
+# alguns exemplos de codigos comentados, que podem ser usados para praticar o que
 # foi visto ate' aqui.
