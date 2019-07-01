@@ -64,6 +64,11 @@ x * x
 x^2 # ^ e' o operador de exponenciacao
 
 
+# Existem varios outros operadores:
+3 %% 2 # resto
+3 %/% 2 # divisao sem resto
+
+
 # Tambem podemos visualizar o conteudo do objeto x por meio da funcao
 # print:
 print(x)
@@ -196,8 +201,66 @@ cafe_puro > cafe_doce
 
 
 # Com isso, terminamos a parte de familiarizacao com o console no R.
+# Cobrimos muita coisa ja', e tenho certeza que algumas coisas nao ficarao claras agora.
+# Aproveitando, sempre que tiver duvidas sobre uma funcao ou operador, use a funcao 'help':
+help(sum)
+help("%/%")
 
 
 # No arquivo 1_exemplos_basicos.R, na pasta de scripts adicionais, estao disponiveis 
 # alguns exemplos de codigos comentados, que podem ser usados para praticar o que
 # foi visto ate' aqui.
+
+
+# ------------------------------------------------------------------------------
+
+
+# Muitas vezes, queremos usar codigo feito por outra pessoa que esta' em um pacote --
+# o que nada mais e' que um amontoado de codigo com utilidades diversas. Instalamos
+# um pacote com 'install.packages'. 
+
+
+# Neste curso, usaremos muito o 'tidyverse'. Vamos instala-lo:
+install.packages("tidyverse")
+
+
+# Feito isso, podemos carrega-lo com:
+library(tidyverse)
+
+
+# Pronto, podemos usar suas funcoes. Para ter uma idea, elas sao mais de 300,
+# incluindo desde de manipulacao de qualquer tipo de dado, navegacao na internet
+# via httr ate' producao de graficos.
+
+
+# Alem disso, o tidyverse vem com alguns bancos de dados (data.frames ou tibbles),
+# que sao uteis para nos familiarizarmos com esse tipo de formato.
+
+
+# Particularmente, o tidyverse tem um banco (salvo em um objeto) chamado band_members.
+# Vamos tentar abri-lo.
+band_members
+
+
+# Ok, podemos fazer melhor.
+View(band_members)
+
+
+# Essa funcao, View, nao faz parte do tidyverse, mas e' util para visualizar dados
+# como em uma planilha.
+
+# Ou melhor ainda, pra ser rapido e sintetico:
+glimpse(band_members)
+
+
+# 
+
+
+
+
+
+
+
+
+
+
