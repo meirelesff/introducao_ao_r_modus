@@ -1,0 +1,24 @@
+---
+Introdução ao R
+---
+
+Esta pasta contém todos os materiais utilizados na oficina de Introdução ao R. Basicamente, os recursos nela estão organizados da seguinte forma (de acordo com a numeração das pastas):
+
+0. Ementa
+Ementa básica da oficina que, entre outros, introduz os objetivos, o roteiro e a logística do curso. Informações auxiliares e de contato também estão disponíveis ali.
+
+1. Aulas
+Scripts e outros materiais que serão usados em cada aula.
+
+2. Material de apoio
+Guias e livros sobre R. Útil principalmente para consultas e para aprender conteúdos não incluídos neste curso.
+
+3. Scripts adicionais
+Scripts com exercícios e tutoriais adicionais, numerados na sequência em que devem ser trabalhados (entre outros, são cobertos introdução, manipulação de dados, visualização básica e exemplos de análise).
+
+4. Slides
+Slides, já compilados, utilizados no curso.
+
+5. Projeto
+Exemplo de projeto simples inteiramente replicável.
+
