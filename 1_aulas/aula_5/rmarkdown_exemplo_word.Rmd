@@ -1,0 +1,43 @@
+---
+title: "Exemplo de arquivo do Word"
+author: "Quem criou o arquivo"
+date: "Data"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introdução
+
+Arquivos `R Markdown` são fáceis de criar. Basicamente, eles são feitos de texto puro, permeados de marcações (daí ser uma *markup language*). Por exemplo, # indica um título principal.
+
+# Título principal
+
+## Título de segundo nível
+
+### Título de terceiro nível
+
+Texto pode aparecer em *itálico* ou **negrito**. Podemos colocar citações diretas com recuou:
+
+> "Frase famosa", autoria desconhecida.
+
+
+# Gráficos
+
+É possível incluir gráficos diretamente no documento por meio de código em `R`, que será compilado. Exemplo.
+
+```{r exemplo, echo=FALSE}
+# Carrega o pacote
+library(ggplot2)
+
+# Cria alguns dados
+x <- data.frame(x = rnorm(1000))
+
+
+# Plota um histograma
+ggplot(x, aes(x = x)) + geom_histogram()
+
+```
+

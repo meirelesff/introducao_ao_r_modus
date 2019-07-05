@@ -1,0 +1,76 @@
+---
+title: "Meu Artigo Sobre um Tema Legal^[Paper preparado para o X Congresso de X.]"
+author: "Nome Sobrenome^[E-mail: email@email.com.]"
+date: "DCP-UFMG"
+output:
+  word_document:
+    fig_caption: yes
+    reference_docx: paper_word_template.docx
+bibliography: referencias.bib
+csl: associacao-brasileira-de-normas-tecnicas-ipea.csl
+abstract: |
+  This article estimates the electoral effects of conditional cash transfers (CCTs) in three presidential elections in Brazil. It analyzes municipal‐level electoral results and survey data and employs matching techniques to reduce causal inference problems typical of observational studies. Results show that CCTs are associated with increased performance by the incumbent party presidential candidate in all three elections but that these effects have been reaped by incumbents from different parties. It also shows that CCTs have had no discernible impacts on party identification and the performance of incumbent parties in legislative elections. Together, these findings suggest that CCTs are significant in the short run, but lack the capacity to induce substantial long‐term voter realignments.
+---
+
+```{r setup, include=FALSE}
+# knitr
+knitr::opts_chunk$set(dpi = 300, 
+                      dev.args = list(type = "cairo"), 
+                      echo = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE, 
+                      fig.align = "center",
+                      fig.width = 6, fig.height = 4.2, 
+                      fig.retina = 3, 
+                      cache = TRUE)
+
+# Pacotes
+library(tidyverse)
+library(stargazer)
+
+# Configs
+tam_fonte <- 12
+
+```
+
+
+# Introdução
+
+Este parágrafo introduz o programa e motiva o artigo. Podemos usar citações para ajudar [Cf. @abranches1988presidencialismo]. Podemos também mencionar o trabalho de @abranches1988presidencialismo explicitamente. Ou, ainda, mencionar páginas específicas [@abranches1988presidencialismo, p. 225-9]. Notas de rodapé entram também.^[Conteúdo da nota de rodapé.]
+
+
+# Literatura
+
+Políticos frequentemente valem-se de seus cargos para favorecer as regiões onde atuam. Alguns estudos afirmam que ministros no Brasil agiriam dessa forma, destinando mais recursos ministeriais para seus estados.
+
+
+## Teoria
+
+Aqui vai alguma teoria.
+
+
+## Gráficos
+
+Aqui vai um gráfico.
+
+```{r figura1}
+tibble(x = rnorm(100)) %>%
+  ggplot(aes(x = x)) + 
+  geom_histogram() +
+  theme_classic(base_size = tam_fonte) +
+  theme(axis.text = element_text(color = "black"))
+```
+
+No Gráfico X.
+
+
+
+# Referências
+
+
+
+
+
+
+
+
